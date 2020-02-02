@@ -11,6 +11,11 @@ function Todo({ task, completed }) {
     <ListItem>
       <CheckBox tabIndex={-1} checked={completed} />
       <ListItemText>{task}</ListItemText>
+      <ListItemSecondaryAction>
+        <IconButton>
+          <DeleteIcon />
+        </IconButton>
+      </ListItemSecondaryAction>
     </ListItem>
   )
 }
