@@ -6,7 +6,17 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Grid from '@material-ui/core/Grid'
 
 function TodoApp() {
-  return <div>Todo</div>
+  return (
+    <Paper
+      style={{
+        padding: 0,
+        margin: 0,
+        height: '100vh',
+        backgroundColor: '#fafafa'
+      }}
+      elevation={0}
+    />
+  )
 }
 
 export default TodoApp
