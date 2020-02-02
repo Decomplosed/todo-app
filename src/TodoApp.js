@@ -6,6 +6,12 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Grid from '@material-ui/core/Grid'
 
 function TodoApp() {
+  const initialTodos = [
+    { id: 1, task: 'Do something1', completed: false },
+    { id: 2, task: 'Do something2', completed: true },
+    { id: 3, task: 'Do something3', completed: false }
+  ]
+  const [todos, setTodos] = useState()
   return (
     <Paper
       style={{
