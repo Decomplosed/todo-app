@@ -12,7 +12,7 @@ function TodoApp() {
     { id: 2, task: 'Do something2', completed: true },
     { id: 3, task: 'Do something3', completed: false }
   ]
-  const [todos, setTodos] = useState()
+  const [todos, setTodos] = useState(initialTodos)
   return (
     <Paper
       style={{
@@ -28,6 +28,7 @@ function TodoApp() {
           <Typography coolo='inherit'>TODOS WITH HOOKS</Typography>
         </Toolbar>
       </AppBar>
+      <TodoList todos={todos} />
     </Paper>
   )
 }
