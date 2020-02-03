@@ -6,7 +6,6 @@ import Paper from '@material-ui/core/Paper'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Grid from '@material-ui/core/Grid'
-import uuid from 'uuid/v4'
 
 function TodoApp() {
   const initialTodos = JSON.parse(window.localStorage.getItem('todos') || '')
