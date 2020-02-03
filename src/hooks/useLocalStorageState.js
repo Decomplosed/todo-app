@@ -11,6 +11,10 @@ function UseLocalStorageState(key, defaultVal) {
     }
     return val
   })
+
+  useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(state))
+  }, [key, state])
 }
 
 export default UseLocalStorageState
