@@ -10,11 +10,6 @@ import Grid from '@material-ui/core/Grid'
 
 function TodoApp() {
   const initialTodos = JSON.parse(window.localStorage.getItem('todos') || '')
-  // const initialTodos = [
-  //   { id: 1, task: 'Do something1', completed: false },
-  //   { id: 2, task: 'Do something2', completed: true },
-  //   { id: 3, task: 'Do something3', completed: false }
-  // ]
 
   useEffect(() => {
     window.localStorage.setItem('todos', JSON.stringify(todos))
