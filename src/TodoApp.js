@@ -9,15 +9,10 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Grid from '@material-ui/core/Grid'
 
 function TodoApp() {
-  const initialTodos = JSON.parse(window.localStorage.getItem('todos') || '')
-
+  const initialTodos = []
   const { todos, addTodo, removeTodo, toggleTodo, editTodo } = useTodoState(
     initialTodos
   )
-
-  useEffect(() => {
-    window.localStorage.setItem('todos', JSON.stringify(todos))
-  }, [todos])
 
   return (
     <Paper
