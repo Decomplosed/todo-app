@@ -12,7 +12,7 @@ const reducer = (state, action) => {
       )
     case 'EDIT':
       return state.map(todo =>
-        todo.id === action.id ? { ...todo, task: newTask } : todo
+        todo.id === action.id ? { ...todo, task: action.newTask } : todo
       )
   }
 }
