@@ -10,11 +10,6 @@ import Grid from '@material-ui/core/Grid'
 import { TodosProvider } from './context/TodosContext'
 
 function TodoApp() {
-  const initialTodos = []
-  const { todos, addTodo, removeTodo, toggleTodo, editTodo } = useTodoState(
-    initialTodos
-  )
-
   return (
     <Paper
       style={{
