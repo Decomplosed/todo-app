@@ -22,7 +22,7 @@ function Todo({ id, task, completed }) {
           <CheckBox
             tabIndex={-1}
             checked={completed}
-            onClick={() => toggleTodo(id)}
+            onClick={() => dispatch({ type: 'TOGGLE', id: id })}
           />
           <ListItemText
             style={{ textDecoration: completed ? 'line-through' : 'none' }}
@@ -30,7 +30,10 @@ function Todo({ id, task, completed }) {
             {task}
           </ListItemText>
           <ListItemSecondaryAction>
-            <IconButton aria-label='Delete' onClick={() => removeTodo(id)}>
+            <IconButton
+              aria-label='Delete'
+              onClick={() => dispatch({ type: 'REMOVE', id: id })}
+            >
               <DeleteIcon />
             </IconButton>
             <IconButton aria-label='Edit' onClick={toggle}>
