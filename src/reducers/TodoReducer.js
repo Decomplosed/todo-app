@@ -14,5 +14,7 @@ const reducer = (state, action) => {
       return state.map(todo =>
         todo.id === action.id ? { ...todo, task: action.newTask } : todo
       )
+    default:
+      return state
   }
 }
