@@ -7,3 +7,9 @@ const defaultTodos = [
 ]
 
 export const TodosContext = createContext()
+
+function TodosProvider(props) {
+  const { todos, addTodo, removeTodo, toggleTodo, editTodo } = useTodoState(
+    defaultTodos
+  )
+}
