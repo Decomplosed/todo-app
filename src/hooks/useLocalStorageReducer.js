@@ -16,7 +16,7 @@ function UseLocalStorageReducer(key, defaultVal, reducer) {
     window.localStorage.setItem(key, JSON.stringify(state))
   }, [key, state])
 
-  return [state, setState]
+  return [state, dispatch]
 }
 
-export default UseLocalStorageState
+export { UseLocalStorageReducer }
