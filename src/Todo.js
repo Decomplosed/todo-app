@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, memo } from 'react'
 import EditTodoForm from './EditTodoForm'
 import useToggleState from './hooks/useToggleState'
 import ListItem from '@material-ui/core/ListItem'
