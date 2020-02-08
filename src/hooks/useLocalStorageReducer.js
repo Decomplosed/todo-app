@@ -1,6 +1,6 @@
-import { useReducer,  useEffect } from 'react'
+import { useReducer, useEffect } from 'react'
 
-function UseLocalStorageState(key, defaultVal) {
+function UseLocalStorageReducer(key, defaultVal, reducer) {
   const [state, setState] = useState(() => {
     let val
 
