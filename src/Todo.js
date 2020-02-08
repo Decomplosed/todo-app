@@ -46,4 +46,4 @@ function Todo({ id, task, completed }) {
   )
 }
 
-export default Todo
+export default memo(Todo)
